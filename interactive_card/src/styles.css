@@ -1,0 +1,404 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --white: hsl(0, 0%, 100%);
+    --light_grayish_violet: hsl(272, 7%, 64%);
+    --dark_grayish_violet: hsl(279, 6%, 55%);
+    --very_dark_violet: hsl(278, 68%, 11%);
+    font-family: "Space Grotesk", sans-serif;
+    /* font-size: 18px; */
+  }
+  body {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 18px;
+    font-weight:700;
+  }
+  @media screen and (max-width: 480px) {
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      width: 375px;
+      margin-top: 120px;
+    }
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+    #totalcontainer {
+      min-height: 100%;
+      display: grid;
+      grid-template-rows: 10fr 2fr;
+    }
+    #inputdetails {
+      display: grid;
+      grid-template-rows: 5fr 7fr;
+      background-color: var(--white);
+      /* width: 375px; */
+      height: 100vh;
+    }
+    #input1 {
+      background-image: url(../src/assets/bg-main-mobile.png);
+      height: 200px;
+      position: relative;
+      /* width: 480px; */
+    }
+    #input2 {
+      background-color: var(--white);
+      display: grid;
+      grid-template-rows: 3fr 2fr 2fr 2fr 3fr;
+      padding: 5%;
+      padding-top: 0px;
+      margin-top: 0px;
+      /* color: var(--white); */
+      /* display:none; */
+    }
+    #thankyou {
+      /* display: none; */
+      position: absolute;
+      margin-top: 300px;
+    }
+    #cardfront {
+    }
+    #cardfrontimg {
+      width: 300px;
+      margin-left: 20px;
+      margin-bottom: 100px;
+      margin-top: 113px;
+      z-index: 5;
+      position: absolute;
+      /* box-shadow:var(--light_grayish_violet) 300px; */
+    }
+    #cardbackimg {
+      width: 300px;
+      position: absolute;
+      margin-right: 10px;
+      margin-left: 50px;
+      margin-top: 20px;
+    }
+    #cardback {
+    }
+    .inputarea {
+      display: grid;
+      grid-template-rows: 6fr 6fr;
+      outline-color: var(--dark_grayish_violet);
+      /* margin-bottom: 10px; */
+    }
+    #inputnumbers {
+      display: grid;
+      grid-template-columns: 4fr 4fr 4fr;
+      margin-top: 10px;
+    }
+    .smallinputs {
+      width: 100px;
+      height: 90%;
+    }
+    .numberslabel {
+      display: grid;
+      grid-template-rows: 4fr 8fr;
+    }
+    .button {
+      width: 320px;
+      height: 50px;
+      justify-content: center;
+      margin: 20px auto;
+    }
+    button {
+      width: inherit;
+      height: inherit;
+      justify-self: center;
+  
+      background-color: var(--very_dark_violet);
+      color: var(--white);
+      border-radius: 8px;
+      border: none;
+    }
+    #spare {
+      height: px;
+    }
+    #cardnumber {
+      margin-top: 10px;
+    }
+    label {
+      color: var(--very_dark_violet);
+    }
+    input {
+      border-radius: 4px;
+      padding: 10px;
+      font-size: 18px;
+      /* border-color: var(--white); */
+    }
+    #logo {
+      position: absolute;
+      margin-top: 134px;
+      z-index: 7;
+      width: 50px;
+      margin-left: 40px;
+    }
+    #p1 {
+      position: absolute;
+      margin-top: 184px;
+      z-index: 7;
+      margin-left: 75px;
+      color: var(--white);
+      font-size: 20px;
+    }
+    #p2 {
+      position: absolute;
+      z-index: 7;
+      margin-top: 234px;
+      color: var(--white);
+      margin-left: 75px;
+      font-size: 12px;
+      font-weight: 100;
+    }
+    #p3 {
+      position: absolute;
+      z-index: 7;
+      margin-top: 234px;
+      margin-left: 260px;
+      color: var(--white);
+      font-size: 12px;
+    }
+    #p4 {
+      position: absolute;
+      color: var(--white);
+      margin-top: 95px;
+      margin-left: 280px;
+      font-size: 12px;
+    }
+    #completeimg {
+      margin: 150px 150px 0;
+      /* margin-top: 180px; */
+    }
+    #thankp {
+      font-weight: 500;
+      margin-top: 15px;
+      margin-left: 140px;
+    }
+    #wep {
+      color: var(--light_grayish_violet);
+      justify-self: center;
+      margin-left: 50px;
+      margin-top: 15px;
+    }
+    .hidden {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 480px){
+    #totalcontainer{
+        display: grid;
+        grid-template-rows: 10fr, 2fr;
+        height: 100vh;
+        /* padding: 10px; */
+    }
+    #inputdetails{
+      display: flex;
+      /* grid-template-columns: 4fr, 8fr; */
+      min-height: 100vh;
+
+    }
+    #input1{
+      background-image: url(../src/assets/bg-main-desktop.png);
+      overflow: hidden;
+      background-repeat: no-repeat;
+      width: 30%;
+      margin-right: 0px;
+    }
+    #input2{
+        background-color:var(--white);
+        overflow: hidden;
+        /* margin-left: 40%; */
+        width:70%;
+        /* position: absolute; */
+        float: right;
+        /* margin-top: 100px; */
+        margin-left: 100px;
+    }
+    #thankyou{
+        /* display: none; */
+        position: absolute;
+        z-index: 7;
+        margin-left: 600px;
+        /* margin-top: 300px; */
+        float: right;
+        /* margin-left: 100px; */
+        /* margin-top: 100px; */
+        min-height: 100vh;
+    }
+    #spare{
+        display:none;
+    }
+    #cardfrontimg{
+        z-index: 7;
+        position: absolute;
+        width: 400px;
+        margin-top: 85px;
+        margin-left: 100px;
+
+    }
+    #cardbackimg{
+        z-index: 7;
+        position: absolute;
+        width: 400px;
+        margin-left: 180px;
+        margin-top: 350px;
+
+    }
+    label {
+        color: var(--very_dark_violet);
+        position: absolute;
+        z-index: 7;
+        /* margin-left: 250px; */
+        margin-bottom: px;
+      }
+      input {
+        border-radius: 4px;
+        padding: 10px;
+        font-size: 18px;
+        /* border-color: var(--white); */
+        position:absolute;
+        margin-top: 30px;
+        border: 1px var(--dark_grayish_violet) solid;
+      }
+      #logo {
+        position: absolute;
+        margin-top: 100px;
+        z-index: 7;
+        width: 80px;
+        margin-left: 120px;
+      }
+      #p1 {
+        position: absolute;
+        margin-top: 184px;
+        z-index: 7;
+        margin-left: 150px;
+        color: var(--white);
+        font-size: 25px;
+        font-weight: 700;
+      }
+      #p2 {
+        position: absolute;
+        z-index: 7;
+        margin-top: 234px;
+        color: var(--white);
+        margin-left: 150px;
+        font-size: 17px;
+        font-weight: 100;
+      }
+      #p3 {
+        position: absolute;
+        z-index: 7;
+        margin-top: 234px;
+        margin-left: 335px;
+        color: var(--white);
+        font-size: 17px;
+      }
+      #p4 {
+        position: absolute;
+        color: var(--white);
+        margin-top: 445px;
+        margin-left: 480px;
+        font-size: 17px;
+        z-index: 7;
+      }
+      .button {
+        width: 320px;
+        height: 50px;
+        justify-content: center;
+        margin-top: 80px ;
+        margin-left: 150px;
+        position: absolute;
+      }
+      button {
+        width: inherit;
+        height: inherit;
+        justify-self: center;
+    
+        background-color: var(--very_dark_violet);
+        color: var(--white);
+        border-radius: 8px;
+        border: none;
+        position: inherit;
+        margin: inherit;
+      }
+      .inputarea {
+        display: grid;
+        /* flex-direction: row; */
+        grid-template-columns: 6fr 6fr;
+        outline-color: var(--dark_grayish_violet);
+        /* margin-bottom: 10px; */
+        margin-top: 100px;
+        margin-left: 300px;
+        height: ;
+        grid-gap: 10px;
+      }
+      #inputnumbers {
+        display: grid;
+        grid-template-columns: 4fr 4fr 4fr;
+        /* margin-top: 10px; */
+        width: 100px;
+        grid-gap: 10px;
+        margin-left: 200px;
+      }
+      .smallinputs {
+        width: 100px;
+        height: 5%;
+        /* margin-top: 150px; */
+      }
+      .numberslabel {
+        display: grid;
+        grid-template-rows: 4fr 8fr;
+        margin-top: 100px;
+        margin-left: 100px;
+      }
+      #inputarea1{
+        margin-top: 500px;
+      }
+      #cardnumber{
+        margin-top: ;
+      }
+      #thankp{
+        margin-left: 240px;
+        margin-top: 20px;
+      }
+      #completeimg{
+        width: 120px;
+        margin-left: 236px;
+        margin-top: 110px;
+
+      }
+      #wep{
+        margin-left: 160px;
+  }
+  #continue{
+    margin-right: 120px;
+    margin-left: 30px
+}
+/* .v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+} */
+
+.v-enter-active {
+  transition: all 0.8s ease-out;
+}
+
+.v-leave-active {
+  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.v-enter-from{
+  transform: translateY(20px);
+  opacity: 0;
+}
+.v-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
+}
+  }
